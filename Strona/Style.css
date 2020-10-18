@@ -1,0 +1,77 @@
+body {
+    background: url(images/moroccan-flower.png);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+div.container {
+    width: 1140px;
+    margin: auto;
+    padding: 0 1em;
+}
+
+div.main-content {
+    width: 70%;
+    float: left;
+}
+
+div.sidebar {
+    width: 30%;
+    float: left;
+}
+
+div.content {
+    overflow: auto;
+}
+
+article, aside, footer, header, section {
+    display: block;
+}
+
+article, header, footer, aside {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+article {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+    text-align: justify;
+}
+
+footer {
+    margin-top: 15px;
+    text-align: center;
+}
+
+figure {
+    float: left;
+    border-right: 2px dashed;
+    border-bottom: 2px dashed;
+    padding: 10px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+#pierwszy h2 {
+    color: #E44D26;
+}
+
+#drugi h2 {
+    color: #0070BA;
+}
+
+header h1 {
+    color: #1CB11D;
+}
+
+aside h2 {
+    color: #EBEB28;
+}
