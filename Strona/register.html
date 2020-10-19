@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Opis strony" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Moja strona</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>Moja strona</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="home"><a href="index.html"><span>Start</span></a></li>
+                    <li class="jeden"><a href="jeden.html"><span>Jeden</span></a></li>
+                    <li class="dwa"><a href="dwa.html"><span>Dwa</span></a></li>
+                    <li class="trzy"><a href="trzy.html"><span>Trzy</span></a></li>
+                    <li class="register"><a href="register.html"><span>Rejestracja</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <sction>
+                <form action="#" method="post" autocomplete="off">
+                    <div class="row">
+                        <label for="name">Imię i nazwisko</label>
+                        <input id="name" type="text" required autofocus="true">
+                    </div>
+                    <div class="row">
+                        <label for="email">Adres e-mail</label>
+                        <input id="email" type="email" required>
+                    </div>
+                    <div class="row">
+                        <label for="password">Hasło</label>
+                        <input id="password" type="password" required>
+                    </div>
+                    <div class="row">
+                        <label for="date">Data urodzienia</label>
+                        <input id="date" type="date">
+                    </div>
+                    <div class="row">
+                        <label for="gender">Płeć</label>
+                        <select id="gender">
+                            <option>Mężczyzna</option>
+                            <option>Kobieta</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="region">Województwo</label>
+                        <input id="region" type="text" list="regions">
+                        <datalist id="regions">
+                            <option value="dolnośląskie"></option>
+                            <option value="lubelskie"></option>
+                            <option value="lubuskie"></option>
+                            <option value="łódzkie"></option>
+                            <option value="małopolskie"></option>
+                            <option value="mazowieckie"></option>
+                            <option value="opolskie"></option>
+                        </datalist>
+                    </div>
+                    <div class="row">
+                        <label for="code">Kod pocztowy</label>
+                        <input id="code" type="text" pattern="^\d{2}-\d{3}$" placeholder="XX-XXX">
+                    </div>
+                    <div class="row">
+                        <label for="description">O mnie</label>
+                        <textarea id="description" maxlength="500" rows="3"></textarea>
+                    </div>
+                    <div class="row">
+                        <label for="awatar">Zdjęcie</label>
+                        <input id="awatar" type="file">
+                    </div>
+                    <div class="row">
+                        <input id="rules" type="checkbox" required>
+                        <span>Akceptuję regulamin</span>
+                    </div>
+                    <div class="row">
+                        <input type="submit">
+                    </div>
+                </form>
+            </sction>
+
+        </div>
+        <footer>
+            Wszelkie prawa zastrzeżone &copy
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

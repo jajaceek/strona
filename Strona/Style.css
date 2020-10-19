@@ -24,11 +24,18 @@ div.content {
     overflow: auto;
 }
 
-article, aside, footer, header, section {
+article,
+aside,
+footer,
+header,
+section {
     display: block;
 }
 
-article, header, footer, aside {
+article,
+.title,
+footer,
+aside {
     background: rgba(255, 255, 255, 0.6);
     padding: 10px;
 }
@@ -74,4 +81,103 @@ header h1 {
 
 aside h2 {
     color: #EBEB28;
+}
+
+nav ul {
+    list-style: none;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0;
+
+}
+
+nav ul li {
+    float: left;
+    margin-right: 10px;
+    height: 40px;
+    width: 80px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul li a span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.home {
+    background: rgba(255, 255, 48, 0.5);
+}
+
+.jeden {
+    background: rgba(242, 102, 41, 0.5);
+}
+
+.dwa {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.trzy {
+    background: rgba(39, 200, 45, 0.5);
+}
+
+.register {
+    background: rgba(255, 255, 255, 0.5);
+    float: right;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.6);
+
+}
+
+form div.row {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+form label {
+    width: 30%;
+    text-align: end;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+form input, form select, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+form input[type="checkbox"] {
+    position: relative;
+    left: 30%;
+    width: auto;
+}
+
+form span {
+    position: relative;
+    left: 30%;
+}
+
+form input[type="submit"] {
+    width: 100px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+form div.row:last-of-type {
+    text-align: center;
 }
